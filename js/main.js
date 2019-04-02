@@ -1,42 +1,63 @@
 console.log('running');
 
-
 $(function(){
+//initial pick icon size
+  $('.x').css('width', '40px');
+  $('.o').css('width', '40px');
 
-$('.a').click(function(){
-    $('.a').html(`<img src="svg/o.svg" alt="">`)
+//game variables
+let player = null;                     //
+let computer = null;                   //computer icon
+let moves = 0;                         //moves
+let board = ['','','','','','','','']; //gameplay array
+//^^^^game variables ^^^
+
+//game play
+$('.inplay').click(function(){
+    $(this).html(player)
+    moves += 1;
+    console.log(moves);
+    console.log(player);
+
 });
 
-$('.b').click(function(){
-    $('.b').html(`<img src="svg/x.svg" alt="">`)
+
+$('.instructions').click(function(){
+  $('.decide').html('test');
+  $('.decide').css('test');
+
+  $('.st0').hide();
+})
+
+
+//choose player click function
+$('.x').click(function(){
+  console.log('clicked');
+  $('.x').css('width', '80px');
+  $('.o').css('width', '80px');
+  player = '<img class="x" src="svg/x.svg" alt="">';
+  computer = '<img class="o" src="svg/o.svg" alt="">';
+  $('.x').hide();
+  $('.o').hide();
+
 });
+//choose player click function
+$('.o').click(function(){
+  console.log('clicked');
+  player = '<img class="x" src="svg/o.svg" alt="">';
+  computer = '<img class="o" src="svg/o.svg" alt="">';
+  $('.x').hide();
+  $('.o').hide();
 
-$('.c').click(function(){
-    $('.c').html(`<img src="svg/o.svg" alt="">`)
+
 });
+//^^^choose player click function^^^
 
-$('.d').click(function(){
-    $('.d').html(`<img src="svg/x.svg" alt="">`)
-});
+//combination test
+if($('.a') == $('#o')){
+  console.log('player');
+}
 
-$('.e').click(function(){
-    $('.e').html(`<img src="svg/o.svg" alt="">`)
-  });
 
-$('.f').click(function(){
-    $('.f').html(`<img src="svg/x.svg" alt="">`)
-});
-
-$('.g').click(function(){
-    $('.g').html(`<img src="svg/o.svg" alt="">`)
-});
-
-$('.h').click(function(){
-    $('.h').html(`<img src="svg/x.svg" alt="">`)
-});
-
-$('.i').click(function(){
-    $('.i').html(`<img src="svg/o.svg" alt="">`)
-});
-
+//game play ^^^
 });
