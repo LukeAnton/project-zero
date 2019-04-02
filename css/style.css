@@ -84,13 +84,12 @@ span{
   max-width: 800px;
   min-width: 500px;
   display: block;
-  margin-bottom:
+
 }
 #lines{
   margin: 100px 150px 100px 150px;
 }
 /* grid lines finish */
-
 .grid-container {
   position: absolute;
   display: grid;
