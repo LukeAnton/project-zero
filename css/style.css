@@ -2,6 +2,7 @@
 
 body{
   background-color: rgb(223, 244, 255);
+/*overflow: hidden;*/
 }
 
 /*tic tac toe heading*/
@@ -12,6 +13,7 @@ h1{
   font-size: 100px;
   color: rgb(32, 32, 32);
 }
+
 
 /* pick your icon arrow style */
 .arrow{
@@ -35,10 +37,10 @@ h1{
     transform: translateY(30);
   }
   40% {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
   60% {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
 }
 /*end of animation for pick your icon arrows*/
@@ -84,7 +86,6 @@ span{
   max-width: 800px;
   min-width: 500px;
   display: block;
-
 }
 #lines{
   margin: 100px 150px 100px 150px;
@@ -98,18 +99,29 @@ span{
   padding: 10px;
   margin: 130px 200px 100px 200px;
 }
+/*icon grid*/
 .a,.b,.c,.d,.e,.f,.g,.h,.i,.j
 {
-  margin-left: -10px;
+  margin-top: 10px;
   width: 80px;
 }
+/*grid dash on finish*/
+.combo1{
 
+  position: absolute;
+  margin: 185px 200px 100px 200px;
+  width: 400px;
+  z-index: 2;
+  visibility: hidden;
+
+
+}
 
 /* animation */
 .st0 {
   stroke-dasharray: 5900;
   stroke-dashoffset: 1000;
-  animation: solid 8s forwards;
+  animation: solid 5s forwards;
 }
 @keyframes solid {
   from {
