@@ -9,10 +9,12 @@ $(function() {
       //game play
       $('.inplay').click(function() {
         $(this).attr("data-board")
-        $(this).html(currentIcon)
         switchPlayer();
         switchIcon();
         checkForWin();
+        $(this).html(currentIcon)
+
+        console.log($('.inplay').attr("data-board"));//test
         moves += 1
 
         boardNumber = $(this).attr("data-board");
@@ -34,6 +36,7 @@ $(function() {
         playerIcon = '<img class="x" src="svg/x.svg" alt="">';
         computerIcon = '<img class="o" src="svg/o.svg" alt="">';
         //^^set player icons^^
+
         $('.x').hide();
         $('.o').hide();
         $('.x').css('width', '80px');
