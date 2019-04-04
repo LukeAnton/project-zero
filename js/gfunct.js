@@ -96,7 +96,7 @@ $(function() {
         playerIcon = '<img class="x" src="svg/x.svg" alt="">';
         computerIcon = '<img class="o" src="svg/o.svg" alt="">';
         //^^set player icons^^
-
+        $('.social').hide();
         $('.x').hide();
         $('.o').hide();
         $('.x').css('width', '80px');
@@ -116,6 +116,7 @@ $(function() {
         playerIcon = '<img class="o" src="svg/o.svg" alt="">';
         computerIcon = '<img class="x" src="svg/x.svg" alt="">';
         //pick icon state
+        $('.social').hide();
         $('.x').hide();
         $('.o').hide();
         $('span').html('Lets Play!');

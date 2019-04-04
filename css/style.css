@@ -174,8 +174,8 @@ span{
 /*Reset Game appear*/
 .resetGame{
 position: absolute;
-width: 400px;
-margin: 180px 200px 100px 200px;
+width: 600px;
+margin: 190px 200px 100px 200px;
 z-index: 10;
 visibility: hidden;
 }
@@ -199,32 +199,51 @@ visibility: hidden;
 
 /*footer*/
 
-
 #in{
   position: absolute;
   width: 40px;
   bottom: 300px;
   left: 32px;
+
 }
 #tw{
   position: absolute;
   width: 45px;
   bottom: 230px;
   left: 30px;
+
 }
 #gh{
   position: absolute;
   width: 80px;
   bottom: 130px;
   left: 10px;
+
 }
 #la{
   position: absolute;
   width: 140px;
   left: 20px;
   bottom: 30px;
+
 }
 
+#in:hover{
+  width: 45px;
+  transition: .2s;
+}
+#tw:hover{
+width: 50px;
+transition: .2s;
+}
+#gh:hover{
+width: 85px;
+transition: .2s;
+}
+#la:hover{
+width: 145px;
+transition: .2s;
+}
 
 
 
