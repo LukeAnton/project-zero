@@ -1,5 +1,8 @@
+Main game screen 
+
 <img width="1440" alt="Screen Shot 2019-04-05 at 9 10 10 am" src="https://user-images.githubusercontent.com/43797015/55591969-c4c32880-5782-11e9-8421-a4f634876710.png">
 
+Game play init
 
 <img width="1440" alt="Screen Shot 2019-04-05 at 8 55 25 am" src="https://user-images.githubusercontent.com/43797015/55591650-ce985c00-5781-11e9-889d-3532893cf3f3.png">
 
