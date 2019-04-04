@@ -74,12 +74,6 @@ $(function() {
           $('.winnero').css({'color':'#BEDB7F',
                               'font-size':'60px'});
         }
-
-        //$('.winnerx').css({'color':'#BEDB7F'});
-
-
-
-
       });
        $('span').attr("src","../svg/x.svg");
 
