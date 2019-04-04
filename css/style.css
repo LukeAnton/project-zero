@@ -69,6 +69,13 @@ span{
   left: 80px;
   width: 100px;
 }
+.instructions:hover{
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  width: 105px;
+  transition: .2s;
+}
 /*back to game button same as above but hidden
  until imnstruction state*/
 .toGame{
@@ -77,6 +84,14 @@ span{
   top: 100px;
   left: 80px;
   width: 100px;
+}
+.toGame:hover{
+  visibility: hidden;
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  width: 105px;
+  transition: .2s;
 }
 
 /* grid lines */
@@ -171,6 +186,7 @@ span{
   visibility: hidden;
 }
 /*end of combo dash*/
+
 /*Reset Game appear*/
 .resetGame{
 position: absolute;
@@ -179,6 +195,7 @@ margin: 190px 200px 100px 200px;
 z-index: 10;
 visibility: hidden;
 }
+
 /*Reset Game appear end*/
 
 /* animation */

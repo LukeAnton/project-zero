@@ -8,21 +8,19 @@ $(function() {
 
       //game play
       $('.inplay').click(function() {
-
         $(this).attr("data-board")
         switchPlayer();
         switchIcon();
         checkForWin();
         $(this).html(currentIcon)
         console.log($('.inplay').attr("data-board"));//test
-        moves += 1
+        moves += 1;
         boardNumber = $(this).attr("data-board");
         makeMove(boardNumber);
         console.log(board);
 
         //combo checks
         if (combo === 'combo1'){
-
           $('.combo1').css({'visibility':'visible'});
           $('.resetGame').css({'visibility':'visible'})
           $('#lines').css({'opacity':'.5'})
@@ -75,7 +73,14 @@ $(function() {
                               'font-size':'60px'});
         }
       });
-       $('span').attr("src","../svg/x.svg");
+
+      //check for placeholder
+      
+
+
+
+
+
 
       $('.resetGame').click(function(){
         window.location = "https://lukeanton.github.io/project-zero/";

@@ -12,7 +12,7 @@ let currentIcon = null;
 let winner = null;
 //^^^^game variables ^^^
 
-//Switc Icon function that sets players icon on display
+//Switch Icon function that sets players icon on display
 const switchIcon = function() {
   if (moves % 2 === 0) {
     currentIcon = playerIcon;
