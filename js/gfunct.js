@@ -1,6 +1,6 @@
 console.log('gameboard running');
-$(function() {
 
+$(function() {
       //initial pick icon size
       $('.x').css('width', '40px'); //set icon size in pick menue
       $('.o').css('width', '40px'); //set icon size in pick menue
@@ -8,23 +8,83 @@ $(function() {
 
       //game play
       $('.inplay').click(function() {
+
         $(this).attr("data-board")
         switchPlayer();
         switchIcon();
         checkForWin();
         $(this).html(currentIcon)
-
         console.log($('.inplay').attr("data-board"));//test
         moves += 1
-
         boardNumber = $(this).attr("data-board");
         makeMove(boardNumber);
         console.log(board);
 
+        //combo checks
+        if (combo === 'combo1'){
 
-        //console.log(moves);
-        //console.log(player);
+          $('.combo1').css({'visibility':'visible'});
+          $('.resetGame').css({'visibility':'visible'})
+          $('#lines').css({'opacity':'.5'})
+        }
+        if (combo === 'combo2'){
+          $('.combo2').css({'visibility':'visible'});
+          $('.resetGame').css({'visibility':'visible'})
+          $('#lines').css({'opacity':'.5'})
+        }
+        if (combo === 'combo3'){
+          $('.combo3').css({'visibility':'visible'});
+          $('.resetGame').css({'visibility':'visible'})
+          $('#lines').css({'opacity':'.5'})
+        }
+        if (combo === 'combo4'){
+          $('.combo4').css({'visibility':'visible'});
+          $('.resetGame').css({'visibility':'visible'})
+          $('#lines').css({'opacity':'.5'})
+        }
+        if (combo === 'combo5'){
+          $('.combo5').css({'visibility':'visible'});
+          $('.resetGame').css({'visibility':'visible'})
+          $('#lines').css({'opacity':'.5'})
+        }
+        if (combo === 'combo6'){
+          $('.combo6').css({'visibility':'visible'});
+          $('.resetGame').css({'visibility':'visible'})
+          $('#lines').css({'opacity':'.5'})
+        }
+        if (combo === 'combo7'){
+          $('.combo7').css({'visibility':'visible'});
+          $('.resetGame').css({'visibility':'visible'})
+          $('#lines').css({'opacity':'.5'})
+        }
+        if (combo === 'combo8'){
+          $('.combo8').css({'visibility':'visible'});
+          $('.resetGame').css({'visibility':'visible'})
+          $('#lines').css({'opacity':'.5'})
+        }
+        //end combo checks
 
+        //winner
+        if (winner === 'X'){
+          $('span').html('<span class="winnerx">X</span> WINS');
+          $('.winnerx').css({'color':'#F15D72',
+                              'font-size':'60px'});
+        } if (winner === 'O'){
+          $('span').html('<span class="winnero">O</span> WINS');
+          $('.winnero').css({'color':'#BEDB7F',
+                              'font-size':'60px'});
+        }
+
+        //$('.winnerx').css({'color':'#BEDB7F'});
+
+
+
+
+      });
+       $('span').attr("src","../svg/x.svg");
+
+      $('.resetGame').click(function(){
+        window.location = "https://lukeanton.github.io/project-zero/";
       });
 
       //choose player x click function
@@ -85,15 +145,23 @@ $(function() {
           'visibility': 'visible'
         });
         $('.instructions').hide();
-        $('.game-container').hide();
+        $('.grid').hide();
+        $('.social').hide();
       })
       //back to original state
       $('.toGame').click(function() {
-        window.location = "http://127.0.0.1:3000/";
+        window.location = "https://lukeanton.github.io/project-zero/";
       })
       //^^^^Instructions function process^^^^
 
 
-      //combination checks
+      //dash combination
+
+
+
+
+
+
+
 
 });
