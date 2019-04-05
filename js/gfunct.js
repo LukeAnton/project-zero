@@ -5,6 +5,24 @@ $(function() {
       $('.x').css('width', '40px'); //set icon size in pick menue
       $('.o').css('width', '40px'); //set icon size in pick menue
 
+      $('.x').hover(function(){
+        $(this).css({'width':'50px',
+                        'margin':' 3px -2px 0 2px',
+                        'transition': '.2s'})},
+                        function(){
+          $(this).css({'width':'40px',
+                          'margin':' 0 10px 0 10px',
+                          'transition': '.2s'});
+      });
+      $('.o').hover(function(){
+        $(this).css({'width':'50px',
+                        'margin':' 3px -2px 0 -2px',
+                        'transition': '.2s'})},
+                        function(){
+          $(this).css({'width':'40px',
+                          'margin':' 0 10px 0 10px',
+                          'transition': '.2s'});
+      });
 
       //game play
       $('.inplay').click(function() {
@@ -75,7 +93,7 @@ $(function() {
       });
 
       //check for placeholder
-      
+
 
 
 

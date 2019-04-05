@@ -71,9 +71,9 @@ span{
 }
 .instructions:hover{
   position: absolute;
-  top: 100px;
-  left: 80px;
-  width: 105px;
+  top: 95px;
+  left: 74px;
+  width: 120px;
   transition: .2s;
 }
 /*back to game button same as above but hidden
@@ -88,9 +88,9 @@ span{
 .toGame:hover{
   visibility: hidden;
   position: absolute;
-  top: 100px;
-  left: 80px;
-  width: 105px;
+  top: 94px;
+  left: 74px;
+  width: 115px;
   transition: .2s;
 }
 
@@ -194,11 +194,30 @@ width: 600px;
 margin: 190px 200px 100px 200px;
 z-index: 10;
 visibility: hidden;
+
+}
+.resetGame:hover{
+
+width: 650px;
+margin: 183px 200px 100px 188px;
+transition: .2s;
+
+
+
 }
 
 /*Reset Game appear end*/
 
 /* animation */
+  .st0 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 155;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+  }
+  /* style */
+
 .st0 {
   stroke-dasharray: 5900;
   stroke-dashoffset: 1000;
@@ -246,21 +265,32 @@ visibility: hidden;
 }
 
 #in:hover{
-  width: 45px;
+  width: 50px;
   transition: .2s;
+  bottom: 296px;
+  left: 28px;
+
+
 }
 #tw:hover{
-width: 50px;
+width: 55px;
 transition: .2s;
+bottom: 227px;
+left: 27px;
 }
+
 #gh:hover{
-width: 85px;
+width: 95px;
 transition: .2s;
+bottom: 126px;
+left: 4px;
+
 }
 #la:hover{
-width: 145px;
+width: 155px;
 transition: .2s;
-}
+left: 15px;
+bottom: 28px;
 
 
 
