@@ -14,10 +14,23 @@ $(function() {
         checkForWin();
         $(this).html(currentIcon)
         //console.log($('.inplay').attr("data-board")); //test
-        moves += 1;
         boardNumber = $(this).attr("data-board");
+        moves += 1;
         makeMove(boardNumber);
         console.log(board);
+        //draw function
+
+
+
+        checkForDraw();
+        if (draw === 'draw'){
+          $('.draw').css({
+            'visibility': 'visible'
+          })
+          $('#lines').css({
+            'opacity': '.5'
+          })
+        }
 
         //combo checks
         if (combo === 'combo1') {
@@ -109,7 +122,6 @@ $(function() {
           })
         }
         //end combo checks
-
         //winner
         if (winner === 'X') {
           $('span').html('<span class="winnerx">X</span> WINS');
@@ -128,8 +140,12 @@ $(function() {
       });
 
       $('.resetGame').click(function() {
-        //window.location = "https://lukeanton.github.io/project-zero/";
-        window.location = "http://127.0.0.1:3000/";
+        window.location = "https://lukeanton.github.io/project-zero/";
+        //window.location = "http://127.0.0.1:3000/";
+      });
+      $('.draw').click(function() {
+        window.location = "https://lukeanton.github.io/project-zero/";
+        //window.location = "http://127.0.0.1:3000/";
       });
 
       //choose player x click function

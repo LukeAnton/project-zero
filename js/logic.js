@@ -1,5 +1,6 @@
 console.log('logic running.....');
 //game variables
+
 let moves = 0; //moves              //move count for end game draw display
 let board = ['', '', '', '', '', '', '', '', '']; //gameplay array
 let combo = null;                   //check for combo and apply dash
@@ -10,6 +11,7 @@ let playerIcon = null;              //same as above but for icon display in grid
 let computerIcon = null;
 let currentIcon = null;
 let winner = null;                  //winner variable for winner icon display
+let draw = null;
 //^^^^game variables ^^^
 
 //Switch Icon function that sets players icon on display
@@ -29,11 +31,22 @@ const switchPlayer = function() {   //icon switch function
   }
 }
 
-const makeMove = function(boardSquare) {
-  board[boardSquare] = currentPlayer;  //assigns clicked grid space players data to array
-  checkForWin(currentPlayer);         //check for win
+const checkForDraw = function(){
+  if (combo === null && moves === 9){
+    draw = 'draw';
+    console.log('draw');
+  }
 }
 
+const makeMove = function(boardSquare) {
+  // if (board[0] === "X" || board[0] === "O" || currentPlayer === null){
+  //   return;
+  //   moves += 0;
+  // }
+  board[boardSquare] = currentPlayer;  //assigns clicked grid space players data to array
+  checkForWin(currentPlayer);
+      //check for win
+}
 
 const checkForWin = function(currentPlayer) {
   //top row

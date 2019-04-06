@@ -14,6 +14,16 @@ h1 {
   font-size: 100px;
   color: rgb(32, 32, 32);
 }
+.htp{
+  margin-top: 110px;
+}
+p{
+    font-family: "Indie Flower", cursive;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 24px;
+}
 .bodyContainer {
   margin: 0 auto;
   padding: 0;
@@ -105,14 +115,14 @@ span {
  until imnstruction state*/
 .toGame {
   position: absolute;
-  top: 100px;
+  top: 50px;
   left: 80px;
   width: 100px;
 }
 
 .toGame:hover {
   position: absolute;
-  top: 94px;
+  top: 45px;
   left: 74px;
   width: 115px;
   transition: 0.2s;
@@ -231,18 +241,29 @@ span {
 /*Reset Game appear*/
 .resetGame {
   position: absolute;
-  width: 600px;
-  margin: 190px 200px 100px 200px;
+  width: 500px;
+  margin: 170px 200px 100px 140px;
   z-index: 10;
   visibility: hidden;
 }
 
 .resetGame:hover {
-  width: 650px;
-  margin: 183px 200px 100px 188px;
+  width: 520px;
+  margin: 165px 200px 100px 135px;
   transition: 0.2s;
 }
-
+.draw{
+  position: absolute;
+  width: 550px;
+  margin: 220px 200px 0 110px;
+  z-index: 10;
+  visibility: hidden;
+}
+.draw:hover{
+  width: 580px;
+  margin: 215px 200px 0 95px;
+  transition: 0.2s;
+}
 /*Reset Game appear end*/
 /* animation */
 .st0 {

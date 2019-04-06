@@ -121,12 +121,12 @@ p{
   /*back to game button same as above but hidden
      until imnstruction state*/
   .toGame {
-    top: 140px;
+    top: 50px;
     left: 30px;
     width: 80px;
   }
   .toGame:hover {
-    top: 135px;
+    top: 45px;
     left: 25px;
     width: 100px;
     transition: 0.2s;
@@ -135,12 +135,24 @@ p{
 
   /*reset game button*/
   .resetGame {
-    width: 525px;
+    width: 300px;
     margin: 60px 200px 100px 80px;
   }
   .resetGame:hover {
-    width: 565px;
-    margin: 50px 200px 100px 70px;
+    width: 320px;
+    margin: 55px 200px 100px 70px;
+  }
+  .draw{
+    position: absolute;
+    width: 300px;
+    margin: 110px 200px 0 80px;
+    z-index: 10;
+     visibility: hidden;
+  }
+  .draw:hover{
+    width: 320px;
+    margin: 105px 200px 0 75px;
+    transition: 0.2s;
   }
 
   /*reset game button*/
