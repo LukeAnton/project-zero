@@ -1,4 +1,5 @@
 console.log('gameboard running');
+console.log('grey test');
 
 $(function() {
 
