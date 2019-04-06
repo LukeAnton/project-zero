@@ -256,15 +256,15 @@ p{
     }
 }
 /*xs screens*/
-@media only screen and (max-width: 410px) {
+/* @media only screen and (max-width: 410px) {
 
-  /* grid container*/
+  grid container
   .grid {
     margin:-60px 0 200px -35px;
     width: 100%;
   }
 
-  /* How to play button */
+  How to play button
   .instructions {
     top: 170px;
     left: 30px;
@@ -276,8 +276,8 @@ p{
     width: 100px;
     transition: 0.2s;
   }
-  /*back to game button same as above but hidden
-     until imnstruction state*/
+  back to game button same as above but hidden
+     until imnstruction state
   .toGame {
     top: 240px;
     left: 30px;
@@ -289,11 +289,11 @@ p{
     width: 100px;
     transition: 0.2s;
   }
-  /* how to play end*/
+  how to play end
 
-  /* dash lines */
+  dash lines
 
-    /*footer*/
+    footer
     .arrowleft {
       margin-right: 100px;
     }
@@ -306,7 +306,7 @@ p{
       letter-spacing: 2px;
     }
 
-}
+} */
 @media only screen and (max-width: 430px) {
 body{
   background: green;
