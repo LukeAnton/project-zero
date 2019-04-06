@@ -1,21 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
 
-body{
+body {
   background-color: #dff4ff;
-  overflow: hidden;
+ overflow: hidden;
+  margin: auto;
 }
 
 /*tic tac toe heading*/
-h1{
-  font-family: 'Indie Flower', cursive;
+h1 {
+  font-family: "Indie Flower", cursive;
   margin: -10px 0 0 0;
   text-align: center;
   font-size: 100px;
   color: rgb(32, 32, 32);
 }
+.bodyContainer {
+  margin: 0 auto;
+  padding: 0;
+}
 
 /* pick your icon arrow style */
-.arrow{
+.arrowleft {
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 150px;
+  background-image: url("../svg/arrow.svg");
+}
+.arrowright {
   background-repeat: no-repeat;
   position: relative;
   text-align: center;
@@ -23,90 +38,101 @@ h1{
   height: 30px;
   display: inline-block;
   margin-left: 155px;
-  margin-right: 150px;
-  background-image: url('../svg/arrow.svg');
+  background-image: url("../svg/arrow.svg");
 }
 
 /*bounce animation for pick your icon arrows*/
 .bounce {
   animation: bounce 3s infinite;
 }
+
 @keyframes bounce {
-  10%, 20%, 50%, 80%, 100% {
+  10%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(30);
   }
+
   40% {
     transform: translateY(-10px);
   }
+
   60% {
     transform: translateY(-10px);
   }
 }
-/*end of animation for pick your icon arrows*/
 
+/*end of animation for pick your icon arrows*/
 /*pick your icon style*/
-span{
-  font-family: 'Indie Flower', cursive;
+
+span {
+  font-family: "Indie Flower", cursive;
   font-size: 40px;
 }
 
 /*pick your icon container*/
-.decide{
+.decide {
   text-align: center;
-  margin: auto;
-  min-width: 700px;
+  margin: 0 auto;
+  min-width: 200px;
 }
 
 /*game icons*/
-.x, .o{
+.x,
+.o {
   margin: 0 10px 0 10px;
 }
 
 /*instructions button*/
-.instructions{
+.instructions {
   position: absolute;
   top: 100px;
   left: 80px;
   width: 100px;
 }
-.instructions:hover{
+
+.instructions:hover {
   position: absolute;
   top: 95px;
   left: 74px;
   width: 120px;
-  transition: .2s;
+  transition: 0.2s;
 }
+
 /*back to game button same as above but hidden
  until imnstruction state*/
-.toGame{
-  visibility: hidden;
+.toGame {
   position: absolute;
   top: 100px;
   left: 80px;
   width: 100px;
 }
-.toGame:hover{
-  visibility: hidden;
+
+.toGame:hover {
   position: absolute;
   top: 94px;
   left: 74px;
   width: 115px;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 /* grid lines */
-.grid{
+.grid {
   margin: -60px auto;
   max-width: 800px;
   min-width: 500px;
   display: block;
 }
-#lines{
+
+#lines {
   position: absolute;
   width: 500px;
   margin: -50px 150px 10px -60px;
   z-index: -10;
 }
+
 /* grid lines finish */
 .grid-container {
   position: absolute;
@@ -115,37 +141,48 @@ span{
   grid-template-rows: 150px 150px 150px;
   margin: 130px 200px 100px 200px;
 }
+
 /*icon grid*/
-.a,.b,.c,.d,.e,.f,.g,.h,.i,.j{
+.a,
+.b,
+.c,
+.d,
+.e,
+.f,
+.g,
+.h,
+.i,
+.j {
   width: 80px;
 }
+
 /*grid dash on finish*/
-
-
-
 /* dash lines */
-.combo1{
+.combo1 {
   position: absolute;
   margin: 150px 200px 100px 190px;
   width: 400px;
   z-index: 9;
   visibility: hidden;
 }
-.combo2{
+
+.combo2 {
   position: absolute;
   margin: 300px 200px 100px 190px;
   width: 400px;
   z-index: 2;
   visibility: hidden;
 }
-.combo3{
+
+.combo3 {
   position: absolute;
   margin: 450px 200px 100px 190px;
   width: 400px;
   z-index: 2;
   visibility: hidden;
 }
-.combo4{
+
+.combo4 {
   position: absolute;
   margin: 300px 200px 100px 38px;
   width: 400px;
@@ -153,7 +190,8 @@ span{
   transform: rotate(90deg);
   visibility: hidden;
 }
-.combo5{
+
+.combo5 {
   position: absolute;
   margin: 300px 200px 100px 188px;
   width: 400px;
@@ -161,7 +199,8 @@ span{
   transform: rotate(90deg);
   visibility: hidden;
 }
-.combo6{
+
+.combo6 {
   position: absolute;
   margin: 300px 200px 100px 340px;
   width: 400px;
@@ -169,7 +208,8 @@ span{
   transform: rotate(90deg);
   visibility: hidden;
 }
-.combo7{
+
+.combo7 {
   position: absolute;
   margin: 300px 200px 100px 155px;
   width: 470px;
@@ -177,7 +217,8 @@ span{
   transform: rotate(46deg);
   visibility: hidden;
 }
-.combo8{
+
+.combo8 {
   position: absolute;
   margin: 295px 200px 100px 160px;
   width: 470px;
@@ -185,135 +226,105 @@ span{
   transform: rotate(136deg);
   visibility: hidden;
 }
+
 /*end of combo dash*/
-
 /*Reset Game appear*/
-.resetGame{
-position: absolute;
-width: 600px;
-margin: 190px 200px 100px 200px;
-z-index: 10;
-visibility: hidden;
-
+.resetGame {
+  position: absolute;
+  width: 600px;
+  margin: 190px 200px 100px 200px;
+  z-index: 10;
+  visibility: hidden;
 }
-.resetGame:hover{
-width: 650px;
-margin: 183px 200px 100px 188px;
-transition: .2s;
+
+.resetGame:hover {
+  width: 650px;
+  margin: 183px 200px 100px 188px;
+  transition: 0.2s;
 }
 
 /*Reset Game appear end*/
-
 /* animation */
-  .st0 {
-    fill: none;
-    stroke: #000000;
-    stroke-width: 155;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-  }
-  /* style */
+.st0 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 155;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
 
+/* style */
 .st0 {
   stroke-dasharray: 5900;
   stroke-dashoffset: 1000;
   animation: solid 5s forwards;
 }
+
 @keyframes solid {
   from {
     stroke-dashoffset: 6000;
   }
+
   to {
     stroke-dashoffset: 0;
   }
 }
+
 /* animation end */
-
 /*footer*/
-
-#in{
+#in {
   position: absolute;
   width: 40px;
   bottom: 300px;
   left: 32px;
-
 }
-#tw{
+
+#tw {
   position: absolute;
   width: 45px;
   bottom: 230px;
   left: 30px;
-
 }
-#gh{
+
+#gh {
   position: absolute;
   width: 80px;
   bottom: 130px;
   left: 10px;
-
 }
-#la{
+
+#la {
   position: absolute;
   width: 140px;
   left: 20px;
   bottom: 30px;
-
 }
 
-#in:hover{
+#in:hover {
   width: 50px;
-  transition: .2s;
+  transition: 0.2s;
   bottom: 296px;
   left: 28px;
-
-
-}
-#tw:hover{
-width: 55px;
-transition: .2s;
-bottom: 227px;
-left: 27px;
 }
 
-#gh:hover{
-width: 95px;
-transition: .2s;
-bottom: 126px;
-left: 4px;
-
+#tw:hover {
+  width: 55px;
+  transition: 0.2s;
+  bottom: 227px;
+  left: 27px;
 }
-#la:hover{
-width: 155px;
-transition: .2s;
-left: 15px;
-bottom: 28px;
 
+#gh:hover {
+  width: 95px;
+  transition: 0.2s;
+  bottom: 126px;
+  left: 4px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*footer*/
+#la:hover {
+  width: 155px;
+  transition: 0.2s;
+  left: 15px;
+  bottom: 28px;
+}
+  /*footer*/

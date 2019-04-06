@@ -21,5 +21,3 @@
 ### How to play
 
 <img width="1440" alt="Screen Shot 2019-04-05 at 8 54 31 am" src="https://user-images.githubusercontent.com/43797015/55591836-5bdbb080-5782-11e9-99d6-9b3c184a9cf9.png">
-
-#### Bugs 
