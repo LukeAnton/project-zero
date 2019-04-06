@@ -309,16 +309,21 @@ p{
 }
 
 @media (max-width:416px) and (min-width:100px) {
-body{
-  background: grey;
-}
+
 h1{
   margin-top: 20px;
   line-height: 60px;
 }
+p{
+  margin-top: -20px;
+}
+.htp{
+  margin-top: 20px;
+  line-height: 80px;
+}
   /* grid container*/
   .grid {
-    margin:-80px 0 200px -40px;
+    margin:-60px 0 200px -35px;
     width: 100%;
   }
 
@@ -329,22 +334,22 @@ h1{
     width: 60px;
   }
   .instructions:hover {
-    top: 95px;
+    top: 75px;
     left: 24px;
-    width: 100px;
+    width: 70px;
     transition: 0.2s;
   }
   /*back to game button same as above but hidden
      until imnstruction state*/
   .toGame {
-    top: 240px;
+    top: 120px;
     left: 30px;
-    width: 80px;
+    width: 60px;
   }
   .toGame:hover {
-    top: 235px;
+    top: 115px;
     left: 25px;
-    width: 100px;
+    width: 70px;
     transition: 0.2s;
   }
   /* how to play end*/
