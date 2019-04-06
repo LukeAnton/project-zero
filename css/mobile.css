@@ -256,7 +256,7 @@ p{
     }
 }
 /*xs screens*/
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 417px) {
 
   /* grid container*/
   .grid {
@@ -308,7 +308,7 @@ p{
 
 }
 
-@media (max-width:399px) and (min-width:100px) {
+@media (max-width:416px) and (min-width:100px) {
 body{
   background: grey;
 }
